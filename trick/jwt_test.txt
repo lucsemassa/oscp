@@ -1,0 +1,8 @@
+Run jwt_tool with mode All Tests! and wait for green lines
+
+python3 jwt_tool.py -M at \
+    -t "https://api.example.com/api/v1/user/76bab5dd-9307-ab04-8123-fda81234245" \
+    -rh "Authorization: Bearer eyJhbG...<JWT Token>"
+
+Then, you can search the request in your proxy or dump the used JWT for that request using jwt_ tool:
+python3 jwt_tool.py -Q "jwttool_706649b802c9f5e41052062a3787b291"
